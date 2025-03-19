@@ -1,0 +1,29 @@
+    body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: #0d0d0d;
+margin: 0;
+perspective: 1000px;
+}
+.card {
+width: 250px;
+height: 350px;
+background: linear-gradient(135deg, #ff0077, #7a00ff);
+border-radius: 15px;
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+color: white;
+font-family: Arial, sans-serif;
+font-weight: bold;
+transform-style: preserve-3d;
+transition: transform 0.3s ease;
+}
+.card:hover {
+transform: rotateY(20deg) rotateX(10deg) scale(1.05);
+box-shadow: 0 20px 40px rgba(255, 0, 255, 0.6);
+}
